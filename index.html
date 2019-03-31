@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Guohao Lan's Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+		
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<span><a href="#"><img border="0" width="170" src="images/duke.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--
+						<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a href="bio.html">Biography</a></li>
+                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="zeinalipour.pdf">CV (PDF)</a></li> 
+                            </ul>
+                        </li>
+						-->
+						
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#home">Home</a>
+                        </li>
+						
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+						<!--
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>
+                            </ul>
+                        </li> -->
+						
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#publications">Publications</a>
+                        </li>
+						
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                        <!--<li class="page-scroll">
+                            <a href="talks/">Talks</a>
+                        </li>
+                        <!--<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li> -->
+                        <!--<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-systems-content').show();" href="#systems">Systems</a>
+                        </li>-->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+						<!--
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-advising-content').show();" href="#advising">Advising</a>
+                        </li> -->
+                        
+                        <!--<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+        </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:60px">
+            <div class="container">
+                <div align="left" class="col-md-4">
+                    <a target="_blank" href="images/guohao.jpg">
+                        <img id="mobile-img" src="images/guohao.small.jpg" width="260" border="0" height="280" alt=""></a>
+                </div>
+                <div align="left" class="col-md-6">
+                    <h2> Guohao Lan, Ph.D.
+                        <!--<h5><i>Ph.D., University of New South Wales, Australia, 2018</i></h5> -->
+                    </h2> <br> 
+                    
+                    <h3>Postoctoral Associate</h3><p></p>
+					<h4>
+                        <a href="https://ece.duke.edu/">Department of Electrical and Computer Engineering </a><p></p>
+                        <p><a href="https://www.duke.edu/">Duke University </a><br></p><p></p>
+                        <!--
+                         P.O. Box 20537<br>
+                         1678 Nicosia, CYPRUS<br>
+                        Tel/Fax: <a href="tel:0035722892755">+357-22892755</a> / <a href="tel:0035722892701">01</a><br/> -->
+                        <p> Email: firstname.lastname AT duke.edu </p>
+						<p> Address: 217 Hudson Hall, Science Dr, Durham, NC 27710 </p>
+                        <!-- <script language="JavaScript">
+                            
+                            document.write("&nbsp;");
+                            spiderjam('dzeina','cs.ucy.ac.cy');
+                            
+                            </script><br/> -->
+                        <!--Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br>
+                        Directions: <a target="_blank" href="https://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a> -->
+                    </h4>
+                    <!--<h4><i>Research Interests: Data Management in Computer Systems &amp; Networks</i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4> -->
+                    
+                </div>
+                
+                <!--<i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+                        <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @dmslucy</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i>-->
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <!-- <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b> -->
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: justify; margin-top:1px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <!--<b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>-->
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+						I am a postdoc researcher at the Duke University working with Professor <a target="_blank" href="https://maria.gorlatova.com/bio/">Maria Gorlatova</a> in the Interactive Internet of Things Lab. In prior, I obtained my Ph.D. degree in Computer Science and Engineering from the <a href="https://www.unsw.edu.au/" target="_blank">University of New South Wales</a>, Australia, in November 2018, where I worked with Professor <a target="_blank" href="http://www.cse.unsw.edu.au/~mahbub/">Mahbub Hassan</a> and Professor <a target="_blank" href="https://sites.google.com/site/wenhuunsw/">Wen Hu</a>. I was also a member of the <a target="_blank" href="https://research.csiro.au/ng/"> Networks Research Group </a> at <a target="_blank" href=”https://www.data61.csiro.au/”> Data61, CSIRO</a>. Before my Ph.D., I received the M.Sc. degree in <a target="_blank" href="https://cs.kaist.ac.kr/"> Computer Science </a> from <a target="_blank" href=” http://www.kaist.edu/html/en/index.html”> KAIST</a> in February 2015 under the supervision of Professor<a target="_blank" href=”https://winslab.kaist.ac.kr/index.php/professor/”> Myungchul Kim</a>. I got my B.Eng. degree in Software Engineering from <a target="_blank" href=” http://www.hit.edu.cn/”> Harbin Institute of Technology</a>, China in 2012.
+                        </p>
+                        <p>
+                        My research interests rotate around the broad aspects of mobile and ubiquitous computing, mobile sensing and Internet of Things (IoT). Especially, I am interested in improving the energy-efficiency of mobile sensing systems, and in the design of self-powered wearable devices and systems.
+                        <!--<p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
+                        <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a>
+                        <a href="zeinalipour.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<!-- News Section -->
+         <section  name="news" id="news">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:1px" class="col-md-12">
+                     
+                     <!--<b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>-->
+                     <div class="allshow" style="display:none;" id="tab-news-content">
+                         
+                         <hr class="star-primary">
+                         <h2>News</h2>
+                         <ul>
+                             <li>
+                                 <span class="label label-success">Paper Accepted</span> Our paper entitled <em>``SolarGest: Ubiquitous and Battery-free Gesture Recognition using Solar Cells''</em> has been accepted in <strong><a target="_blank" href="https://sigmobile.org/mobicom/2019/">ACM MobiCom 2019</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-danger">Award</span> Our demo entitled <em>``Simultaneous Energy Harvesting and Sensing using Piezoelectric Energy Harvester''</em> has been awarded the <strong>Best Demo Runner-up Award</strong> at <strong><a target="_blank" href="https://conferences.computer.org/iotDI/prev/2018/">ACM/IEEE IoTDI 2018</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-success">Paper Accepted</span> Our paper entitled <em>``KEH-Gait: Using Kinetic Energy Harvesting for Gait-based User Authentication Systems''</em> has been accepted in <strong>IEEE Transactions on Mobile Computing</strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-info">Service</span> I was invited to serve on the panel session of <strong><a target="_blank" href="http://percom.org/Previous/ST2018/">IEEE PerCom 2018</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-danger">Award</span> I was among the four awardees of the <strong>IEEE CS TCPP Student Travel Grant</strong> for <strong><a target="_blank" href="http://percom.org/Previous/ST2018/node/22.html">IEEE PerCom 2018</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-success">Paper Accepted</span> Our paper entitled <em>``SEHS: Simultaneous Energy Harvesting and Sensing using Piezoelectric Energy Harvester''</em> has been accepted in <strong><a target="_blank" href="https://conferences.computer.org/iotDI/prev/2018/">ACM/IEEE IoTDI 2018</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-success">Paper Accepted</span> Our paper entitled <em>``HiddenCode: Hidden Acoustic Signal Capture with Vibration Energy Harvesting''</em> has been accepted in <strong><a target="_blank" href="http://percom.org/Previous/ST2018/node/22.html">IEEE PerCom 2018</a></strong>.
+                             </li>
+							 <li>
+                                 <span class="label label-success">Paper Accepted</span> Our paper entitled <em>``HARKE: Human Activity Recognition from Kinetic Energy Harvesting Data in Wearable Devices''</em> has been accepted in <strong>IEEE Transactions on Mobile Computing</strong>.
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+		
+        <!-- News Section -->
+        <!-- <div class="twitterlow" style="display:none;" id="t1">
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" id="tab-news-content">
+                            
+                            <hr class="star-primary">
+                            
+                            <h2>News</h2>
+                            <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                                by @dmslcy</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                            </script>
+                            </center>
+                        </b>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: justify; margin-top:1px" class="col-md-16">
+                    
+                    <!--<b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>-->
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Publications <a href="https://scholar.google.com/citations?user=1ebZN5gAAAAJ&hl=en" class="btn btn-link"> Full List in Google Scholar &raquo;</a></h2>
+                        <!--<h4>
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 25
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?user=HCxwGIkAAAAJ&hl=en"><font color=white>Citations</font></a>: 2867
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 3
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://orcid.org/0000-0002-7239-2387"><font color="white">ORCID</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=35176841800"><font color="white">Scopus</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.researcherid.com/rid/O-2301-2016"><font color="white">ResearcherID</font></a>
+                            </span>
+                        </h4> -->
+						<h3>Journal and Magazine</h3>
+                        <ol reversed>
+                            <!--<li><span class="label label-success">IEEE TITS</span> <a target="_blank" href="https://arxiv.org/pdf/1807.02268.pdf">"EnTrans: Leveraging Energy Harvesting Signal for Transportation Mode Detection"</a>, Guohao Lan, Weitao Xu, Dong Ma, Sara Khalifa, Mahbub Hassan and Wen Hu, Submitted to the <b>IEEE Transactions on Intelligent Transportation Systems (IEEE TITS)</b>. <font color="red">(accepted!)</font></li>
+                            </li>-->
+                          <li><span class="label label-primary">ACM TIOT</span> <a target="_blank" href="https://arxiv.org/abs/1806.07055">"Capacitor based activity sensing for kinetic powered wearable IoTs"</a><br>
+						  <mark>Guohao Lan</mark>, Dong Ma, Weitao Xu, Mahbub Hassan, and Wen Hu<br>
+						  Submitted to <b>ACM Transactions on Internet of Things (TIOT)</b>.<font color="red">(minor revision)</font></li><p></p>
+                          <li><span class="label label-primary">IEEE TMC</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8344494">"KEH-Gait: Using kinetic energy harvesting for gait-based user authentication systems"</a><br>
+						  Weitao Xu, <mark>Guohao Lan</mark>, Qi Lin, Sara Khalifa, Mahbub Hassan, Neil Bergmann, and Wen Hu<br>
+						  <b>IEEE Transactions on Mobile Computing</b>, vol. 18, no. 1, pp. 139-152, 2019. <b>(SCI IF: 4.098)</b></li><p></p>
+                          <li><span class="label label-primary">IEEE Computer</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8481257">"Kinetic-powered wearable IoT for healthcare: Challenges and opportunities"</a><br>
+						  Mahbub Hassan, Wen Hu, <mark>Guohao Lan</mark>, Sara Khalifa, Aruna Seneviratne, and Sajal K. Das<br>
+						  <b>IEEE Computer</b>, vol. 51, no. 9, pp. 64-74, 2018. <b>(SCI IF: 1.94)</b></li><p></p>
+						  <li><span class="label label-primary">IEEE TMC</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8063906">"HARKE: Human activity recognition from kinetic energy harvesting data in wearable devices"</a><br>
+						  Sara Khalifa, <mark>Guohao Lan</mark>, Mahbub Hassan, Aruna Seneviratne, and Sajal K. Das<br>
+						  <b>IEEE Transactions on Mobile Computing</b>, vol. 17, no. 6, pp. 1353-1368, 2018. <b>(SCI IF: 4.098)</b></li><p></p>
+						  <li><span class="label label-primary">IEEE COMST</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7993011">"A survey of wearable devices and challenges"</a><br>
+						  Suranga Seneviratne, Yining Hu, Thi Tham Nguyen, <mark>Guohao Lan</mark>, Sara Khalifa, Kanchana Thilakarathna, Mahbub Hassan, and Aruna Seneviratne<br>
+						  <b>IEEE Communication Surveys & Tutorials</b>, vol. 19, no. 4, pp. 2573-2620, 2017. <b>(SCI IF: 20.23)</b></li><p></p>
+     
+                        </ol><p></p>
+						<h3>Conference Proceedings</h3>
+                        <ol reversed>
+						<li><span class="label label-primary">MobiCom'19</span> <a target="_blank" href="https://arxiv.org/pdf/1812.01766.pdf">
+						"SolarGest: Ubiquitous and battery-free gesture recognition using solar cells"</a><br>
+						Dong Ma, <mark>Guohao Lan</mark>, Mahbub Hassan, Wen Hu, Mushfika Baishakhi Upama, Ashraf Uddin, and Moustafa Youssef<br>
+						Proceedings of the 25th Annual International Conference on Mobile Computing and Networking, 2019.<br>
+						<b>(Acceptance rate: TBD, ERA Rank A*)</b></li><p></p>
+						
+						<li><span class="label label-primary">IoTDI'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8366989">
+						"SEHS: Simultaneous energy harvesting and sensing using piezoelectric energy harvester"</a><br>
+						Dong Ma, <mark>Guohao Lan</mark>, Weitao Xu, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 3rd ACM/IEEE International Conference on Internet-of-Things Design and Implementation, 2018.<br>
+						<b>(Acceptance rate: 21/89=23%)</b></li><p></p>
+                    
+						<li><span class="label label-primary">PerCom'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8444595">
+						"HiddenCode: Hidden acoustic signal capture with vibration energy harvesting"</a><br>
+						<mark>Guohao Lan</mark>, Dong Ma, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 16th IEEE International Conference on Pervasive Computing and Communications, 2018.<br>
+						<b>(Acceptance rate: 23/157=13%, ERA Rank A*)</b></li><p></p>
+						
+						<li><span class="label label-primary">MobiQuitous'17</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3144459">
+						"CapSense: Capacitor-based activity sensing for kinetic energy harvesting powered wearable devices"</a><br>
+						<mark>Guohao Lan</mark>, Dong Ma, Weitao Xu, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 14th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services, 2017.
+						<b>(ERA Rank A)</b></li><p></p>
+						
+						<li><span class="label label-primary">IPSN'17</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3055079">
+						"Kryptein: A compressive-sensing-based encryption scheme for the Internet of Things"</a><br>
+						Wanli Xue, Chengwen Luo, <mark>Guohao Lan</mark>, Rajib Rana, Wen Hu and Aruna Seneviratne<br>
+						Proceedings of the 16th ACM/IEEE conference on Information Processing in Sensor Networks, 2017.<br>
+						<b>(Acceptance rate: 19/104=18%, ERA Rank A*)</b></li><p></p>
+						
+						<li><span class="label label-primary">PerCom'17</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7917863">
+						"VEH-COM: Demodulating vibration energy harvesting for short range communication"</a><br>
+						<mark>Guohao Lan</mark>, Weitao Xu, Sara Khalifa, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 15th IEEE International Conference on Pervasive Computing and Communications, 2017.<br>
+						<b>(Acceptance rate: 28/194=14%, ERA Rank A*)</b></li><p></p>
+						
+						<li><span class="label label-primary">NDSS'17</span> <a target="_blank" href="https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/keh-gait-towards-mobile-healthcare-user-authentication-system-kinetic-energy-harvesting/">
+						"KEH-Gait: Towards a mobile healthcare user authentication system by kinetic energy harvesting"</a><br>
+						Weitao Xu, <mark>Guohao Lan</mark>, Qi Lin, Sara Khalifa, Neil Bergmann, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the Network and Distributed System Security Symposium, 2017.<br>
+						<b>(Acceptance rate: 68/423=16%, ERA Rank A*)</b></li><p></p>
+						
+						<li><span class="label label-primary">Networking'16</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7497202">
+						"AMONET: A method for detecting and mitigating the data rate degradation due to interference over wireless networks"</a><br>
+						<mark>Guohao Lan</mark>, Sangyup Han, Il-Gu Lee and Myungchul Kim<br>
+						Proceedings of the 15th IFIP Networking Conference, 2016.<br>
+						<b>(Acceptance rate: 53/200=26.5%, ERA Rank A)</b></li><p></p>
+						
+						<li><span class="label label-primary">BodyNets'15</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=2856266">
+						"Estimating calorie expenditure from output voltage of piezoelectric energy harvester: An experimental feasibility study"</a><br>
+						<mark>Guohao Lan</mark>, Sara Khalifa, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 10th EAI International Conference on Body Area Networks, 2015.<br>
+						</li><p></p>
+								
+						</ol><p></p>
+						
+						<h3>Workshop Proceedings</h3>
+                        <ol reversed>
+						<li><span class="label label-primary">WiNTECH'18</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3267209">
+						"Gesture recognition with transparent solar cells: A feasibility study"</a><br>
+						Dong Ma, <mark>Guohao Lan</mark>, Mahbub Hassan, Wen Hu, Mushfika Baishakhi Upama, Ashraf Uddin, and Moustafa Youssef<br>
+						Proceedings of the 12th International Workshop on Wireless Network Testbeds, Experimental Evaluation & Characterization, 2018.<br>
+						</li><p></p>
+						
+						<li><span class="label label-primary">PerCom'16 WiP</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7457048">
+						"Transportation mode detection using kinetic energy harvesting wearables"</a><br>
+						<mark>Guohao Lan</mark>, Weitao Xu, Sara Khalifa, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 14th IEEE International Conference on Pervasive Computing and Communications, Work-in-Progress, 2016.
+						<b>(Best WiP Poster Award + Featured in <a target="_blank" href="https://innovate.ieee.org/innovation-spotlight/kinetic-energy-harvesting-transportation-mode/">
+						IEEE Xplore Innovation Spotlight</a>)</b></li><p></p>
+						
+						<li><span class="label label-primary">CoMoRea'16</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7457112">
+						"A bayesian framework for energy-neutral activity monitoring with self-powered wearable sensors"</a><br>
+						Sara Khalifa, <mark>Guohao Lan</mark>, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 12th IEEE PerCom Workshop on Context and Activity Modeling and Recognition, 2016.<br>
+						</li><p></p>
+						
+						</ol>
+						
+						<h3>Poster and Demo</h3>
+                        <ol reversed>
+						<li><span class="label label-primary">IoTDI'18</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/8367014">
+						"Demo abstract: SEHS: simultaneous energy harvesting and sensing using piezoelectric energy harvester"</a><br>
+						Dong Ma, <mark>Guohao Lan</mark>, Weitao Xu, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 3rd ACM/IEEE International Conference on Internet-of-Things Design and Implementation, 2018.<br>
+						<b>(Best Demo Runner-up Award)</b></li><p></p>
+						
+						<li><span class="label label-primary">MobiQuitous'17</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3144510&dl=ACM&coll=DL">
+						"Unobtrusive user verification using piezoelectric energy harvesting"</a><br>
+						Dong Ma, <mark>Guohao Lan</mark>, Weitao Xu, Mahbub Hassan, and Wen Hu<br>
+						Proceedings of the 14th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services, 2017.<br>
+						</li><p></p>
+						
+						<li><span class="label label-primary">PerCom'17</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/7917537">
+						"Energy-efficient acoustic communication using vibration energy harvesting"</a><br>
+						<mark>Guohao Lan</mark><br>
+						Proceedings of the 15th IEEE International Conference on Pervasive Computing and Communications, PhD Forum, 2017.<b>(Best PhD Forum Paper Award)</b></li><p></p>
+						
+						</ol>
+						
+						<h3>Book Chapters</h3>
+                        <ol reversed>
+						<li><a target="_blank" href="https://www.intechopen.com/books/medical-internet-of-things-m-iot-enabling-technologies-and-emerging-applications/gait-based-smart-pairing-system-for-personal-wearable-devices">
+						"Gait-based smart pairing system for personal wearable devices"</a><br>
+						Weitao Xu, and <mark>Guohao Lan</mark><br>
+						Book chapter in <a target="_blank" href="https://www.intechopen.com/books/medical-internet-of-things-m-iot-enabling-technologies-and-emerging-applications">
+						"Medical Internet of Things (m-IoT)- Enabling technologies and emerging applications"</a>, 2019.<br>
+						</li><p></p>
+						
+						<li><a target="_blank" href="https://www.igi-global.com/chapter/human-context-detection-from-kinetic-energy-harvesting-wearables/187273">
+						"Human context detection from kinetic energy harvesting wearables"</a><br>
+						Sara Khalifa, <mark>Guohao Lan</mark>, Mahbub Hassan, Wen Hu, and Aruna Seneviatne<br>
+						Book chapter in <a target="_blank" href="https://www.igi-global.com/book/examining-developments-applications-wearable-devices/180229">
+						"Examining developments and applications of wearable devices in modern society"</a>, 2018.<br>
+						</li><p></p>
+						
+						</ol>
+					</div>
+                </div>
+            </div>
+        </section>
+           
+ 
+         <!-- Awards Section -->
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:1px" class="col-md-12">
+                     
+                     <!--<b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>-->
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors</h2>
+                         <ul>
+                             <li>
+                                 Best Demo Runner-up Award, ACM/IEEE IoTDI 2018. <a target="_blank" href="https://conferences.computer.org/iotDI/prev/2018/awd.html">[Link]</a>
+                             </li>
+                             <li>
+                                 IEEE TCPP Student Travel Award, IEEE PerCom 2018. <a target="_blank" href="http://percom.org/Previous/ST2018/node/22.html">[Link]</a>
+                             </li>
+							 <li>
+								 First Prize in Postgraduate Student Paper Competition, IEEE Australia Council, 2016. <a target="_blank" href="http://ieee-ac.org/awards2016.html">[Link]</a>
+                             </li>
+							 <li>
+                                 Best Ph.D. Forum Paper Award, IEEE PerCom 2017. <a target="_blank" href="http://www.percom.org/Previous/ST2017/node/31.html">[Link]</a>
+                             </li>
+							 <li> 
+                                 IEEE TCCC Student Travel Award, IEEE PerCom 2017.
+                             </li>
+							 <li>
+                                 Postgraduate Research Support Scheme Conference Travel Award, UNSW, 2017.
+                             </li>
+							 <li>
+                                 Runner-up in IT Technical Innovation, NASSCOM Australia, 2017. <a target="_blank" href="https://nasscom.org.au/">[Link]</a>
+                             </li>
+							 <li>
+                                 Best Work-in-Progress Paper Award, IEEE PerCom 2016. <a target="_blank" href="http://www.percom.org/Previous/ST2016/">[Link]</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+        <!-- Courses Section -->
+		<!--
+        <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h2>Courses <a href="cv.html#SECTION000110000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                        <ul>
+                            <li><span class="label label-success">EPL646</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl646/">Advanced Topics in Databases</a> (Winter)</li>
+                            <li><span class="label label-default">EPL446</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl446/">Advanced Database Systems</a></li>
+                            <li><span class="label label-success">EPL371</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl371">Systems Programming</a> (Spring) </li>
+                            <li><span class="label label-default">EPL342</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl342/">Databases</a></li>
+                            <li><span class="label label-success">EPL232</span> <a href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl232">Programming Techniques and Tools</a> (Winter) [formely EPL132]</li>
+                            <li><span class="label label-default">EPL111</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl111">Discrete Structures in Computer Science and Computation</a></li>
+                            <li><span class="label label-default">EPL035</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl035">Data Structures and Algorithms for ECE</a></li>
+                            <li><span class="label label-default">EPL032</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl032">Introduction to Programming and Problem Solving</a></li>
+                            <li><span class="label label-default">EPL003</span> Computer Science and Information Systems</li>
+                            <li><span class="label label-default">EPL001</span> Introduction to Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+		
+        <!-- Courses Section -->
+		<!--
+        <section name="systems" id="systems">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-4">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-systems-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-systems-content">
+                        <hr class="star-primary">
+                        <h2>Systems <a href="https://dmsl.cs.ucy.ac.cy/projects.php   " class="btn btn-primary">More &raquo;</a></h2>
+                        <ul>
+                            
+                            
+                            <p>
+                            Our group enjoys transforming basic research results into systems and services:
+                            </p>
+                            
+                            <li><span class="label label-success">TBD</span> <a target="_blank" href="https://tbd.cs.ucy.ac.cy" target="_blank">Telco Big Data Awareness</a> (Spatial, Big Data, Decaying)</li>
+                            <li><span class="label label-success">Anyplace</span> <a target="_blank" href="https://anyplace.cs.ucy.ac.cy" target="_blank">Indoor Information Service</a> (Indoor, Big Data, Privacy, Prefetching)</li>
+                            <li><span class="label label-default">Rayzit</span> <a target="_blank" href="https://rayzit.cs.ucy.ac.cy" target="_blank">Crowd Messaging Architecture</a> (Privacy, Crowdsourcing, Mobile, Microblogging)</li>
+                            <li><span class="label label-default">SmartLab</span> <a target="_blank" href="https://smartlab.cs.ucy.ac.cy" target="_blank">Smartphone Cloud Computer</a> (Mobile, Cloud, Programming)</li>
+                            <li><span class="label label-default">Airplace</span> <a target="_blank" href="http://www2.ucy.ac.cy/~laoudias/pages/platform.html" target="_blank">Indoor Localization</a> (Indoor, Wi-Fi, Localization, Mobile)</li>
+                            <li><span class="label label-default">Smarttrace</span> <a target="_blank" href="https://smarttrace.cs.ucy.ac.cy" target="_blank">Trajectory Search Retrieval</a> (Trajectories, Similarity, Mobile)</li>
+                            <li><span class="label label-default">TVM</span> <a target="_blank" href="https://smarttrace.cs.ucy.ac.cy" target="_blank">Temporal Vector Map</a> (Indoor, Privacy, Localization)</li>
+                            <li><span class="label label-default">KSpot+</span> <a target="_blank" href="https://kspot.cs.ucy.ac.cy" target="_blank">Wireless Sensor Networks</a> (WSN, Data Management, Search, Retrieval)</li>
+                            
+                            <br><a target="_blank" href="https://dmsl.cs.ucy.ac.cy/"><img border="0" width="150" src="https://dmsl.cs.ucy.ac.cy/images/logo.png"/></a>
+                            <a target="_blank" href="https://github.com/dmsl/"><img border="0" width="250" src="images/github-logo.png"/></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        
+        <!-- Service Section -->
+        <section name="service" id="service">
+            <div class="container lead">
+                <div style="text-align: justify; margin-top:1px" class="col-md-12">
+                    
+                    <!--<b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-service-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>-->
+                    <div class="allshow" style="display:none;" id="tab-service-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Professional Activities</h2>
+                        <p>
+						<h3>Conference/Workshop Organizing Services</h3>
+                        <!--<span class="label label-success"></span>-->
+                        <ul>
+                            <li><b>Publicity Co-Chairs</b>, <a target="_blank" href="https://www.sics.se/~fehmi/acm-chants/18/index.html">the 13th ACM Workshop on Challenged Networks (CHANTS 2018)</a>.</li>
+                        </ul>
+                        </span>
+                        </p>
+                        
+                        <p>
+                        <!--<span class="label label-success">Technical Program Committees</span>-->
+                        <h3>Technical Program Committees</h3>
+						<ul>
+                            <li>
+                                <a target="_blank" href="https://ewh.ieee.org/conf/sarnoff/2019/">The IEEE Sarnoff Symposium 2019.</a>
+                            </li>
+                                                       
+                        </ul>
+                        
+						<!--<span class="label label-success">Journal and Magazine Referee</span>-->
+						<h3>Journal and Magazine Referee</h3>
+                        <ul>
+                            <li>IEEE <a href="http://www.computer.org/tmc/" target="_blank">Transactions on Mobile Computing</a></li>
+                            <li>IEEE <a href="https://www.computer.org/csdl/magazine/pc/about/15002" target="_blank">Pervasive Computing</a></li>
+                            <li>IEEE <a href="https://ieeeaccess.ieee.org/" target="_blank">Access</a></li>
+                            <li>ACM <a href="https://tosn.acm.org/" target="_blank">Transactions on Sensor Network</a></li>
+                            <li>MDPI's <a href="https://www.mdpi.com/journal/sensors" target="_blank">Sensors</a></li>
+                        </ul>
+						
+                        <!--<span class="label label-success">Workshop and Symposia Committees</span>-->
+						<h3>Conference Review Service</h3>
+                        <ul>
+                            <li><b>ACM SenSys:</b> 2016, 2017, 2018;
+								<b>IEEE PerCom:</b> 2018, 2019;
+								<b>ACM BuildSys:</b> 2018;
+								<b>IEEE ICDCS:</b> 2018;								
+								<b>ACM/IEEE IoTDI:</b> 2018;
+								<b>ACM/IEEE IPSN:</b> 2018;
+								<b>ACM EWSN:</b> 2017;
+								<b>IEEE VTS-Spring:</b> 2017;
+								<b>IEEE LCN:</b> 2017;	
+								<b>IEEE SmartGridComm:</b> 2016;
+								<b>EAI MobiQuitous:</b> 2016.	
+                            </li>                            
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Courses Section -->
+        <!--<section name="advising" id="advising">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:1px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-8">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-advising-content').toggle();">Advising  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-advising-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Advising</h2>
+                        <ul>
+                            <li>
+                                <span class="label label-success">Postdoc</span> <a target="_blank" href="https://www.cs.ucy.ac.cy/~gchatzim/">George Chatzimilioudis</a>, Researcher at MTN, Cyprus.
+                            </li>
+                            <li>
+                                <span class="label label-success">Postdoc</span> <a target="_blank" href="http://staff.frederick.ac.cy//com.ca/AndreasConstantinides/">Andreas Konstantinidis</a>, Lecturer at Frederick University, Cyprus.
+                            </li>
+                            <li>
+                                <span class="label label-success">Postdoc</span> <a target="_blank" href="http://www2.ucy.ac.cy/~laoudias/">Christos Laoudias</a>, Researcher at KIOS Research Center, Cyprus.
+                            </li>
+                            <li>
+                                <span class="label label-success">Ph.D.</span> (completed) <a target="_blank" href="http://www.uclancyprus.ac.cy/en/courses/school-sciences/academics/panayiotis-andreou">Panayiotis Andreou</a>, Assistant Professor at University of Central Lancashire, Cyprus. </span>
+                            </li>
+                            <li>
+                                <span class="label label-success">Ph.D.</span> (completed) <a target="_blank" href="https://www.cs.ucy.ac.cy/~cs07cc6/">Constantinos Costa</a>, Instructor/Researcher, University of Cyprus, Cyprus.
+                            </li>
+                            <li>
+                                <span class="label label-info">Ph.D.</span> (ongoing) <a target="_blank" href="https://www.cs.ucy.ac.cy/~glarko01/">Georgios Larkou</a>, University of Cyprus, Cyprus.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        
+        <!-- Home Section -->
+        <!--<section name="links" id="links">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-9">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-links-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Random Links</h2>
+                        <ul>
+                            <li><span class="label label-success"><a target="_blank" href="https://www.cs.ucy.ac.cy/colloquium/"><font color="white">Colloquium</font></a></span> I am the Computer Science Colloquium Coordinator.</li>
+                            <li><span class="label label-default"><a target="_blank" href="http://www.homepages.ucl.ac.uk/~uccazei/"><font color="white">Brother</font></a></span> My brother's website at UCL, UK.</li>
+                            <li><span class="label label-info"><a target="_blank" href="https://smartlib.cs.ucy.ac.cy/scripts/exportBooks.php?mykey=0a05bb77edad7395da818f361f8115a2"><font color="white">Books</font></a></span> My book collection constructed using our <a target="_blank" href="https://smartlib.cs.ucy.ac.cy/">SmartLib project.</a></li>
+                            <li><span class="label label-danger"><a target="_blank" href="https://code.org/learn"><font color="white">Hour-of-Code</font></a></span> I support the hour of code iniative as a volunteer instructor.</a></li>
+                            <li><span class="label label-primary"><a target="_blank" href="https://github.com/dmsl"><font color="white">Github</font></a></span> I support open-source code development.</a></li>
+                            <li><span class="label label-warning"><a target="_blank" href="http://www.kyreniaship.org/"><font color="white">Kyrenia-Chrysocava</font></a></span> A project aimed to preserve the cultural heritage of the <a target="_blank" href="https://en.wikipedia.org/wiki/Kyrenia_ship">Kyrenia ship</a>.</li>
+                            <li><span class="label label-success"><font color="white">Cycling</font></span> My favorite hobby besides programming :-)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <footer>
+            <small>
+                <center>
+                    © 2019 | Guohao Lan. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
